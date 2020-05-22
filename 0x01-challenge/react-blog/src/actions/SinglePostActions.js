@@ -55,7 +55,7 @@ class SinglePostActions {
                     };
 
                     var type, path;
-                    for(const i=0; i<includes.length; i++) {
+                    for(var i=0; i<includes.length; i++) {
                         type = includes[i].type;
                         path = includes[i].path;
                         IncludeHandler.handleInclude(type, path, includeCallback);
